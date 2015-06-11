@@ -2,8 +2,25 @@ syntax on
 syntax enable
 set nocompatible
 
-execute pathogen#infect()
-execute pathogen#helptags()
+"execute pathogen#infect()
+"execute pathogen#helptags()
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif
+
+call plug#begin('~/.vim/bundle')
+
+Plug 'kien/ctrlp.vim'
+Plug 'fidian/hexmode'
+Plug 'klen/python-mode'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
 
 colorscheme lucius
 LuciusWhite
@@ -29,6 +46,8 @@ set laststatus=2
 set splitbelow
 set splitright
 set t_Co=256
+set scrolloff=5
+set sidescrolloff=5
 
 nmap j gj
 nmap k gk
@@ -44,5 +63,6 @@ let g:pymode_doc = 0
 let g:pymode_lint = 0
 let g:pymode_options_max_line_length = 120
 let g:syntastic_quiet_messages = {"level": "warnings"}
-let g:syntastic_quiet_messages = {"mode": "passive"}
+let g:syntastic_mode_map = {"mode": "passive"}
+let g:ctrlp_working_path_mode = ''
 
