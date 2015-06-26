@@ -19,6 +19,7 @@ Plug 'klen/python-mode'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
