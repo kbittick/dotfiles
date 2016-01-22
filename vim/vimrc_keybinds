@@ -1,0 +1,7 @@
+nmap j gj
+nmap k gk
+map <F2> :!i3lock <Enter>
+map <F5> :CtrlPClearCache <Enter>
+map <F6> :Hexmode <Enter>
+map <F7> :SyntasticCheck <Enter>
+
