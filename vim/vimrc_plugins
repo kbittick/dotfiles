@@ -15,5 +15,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
 Plug 'elzr/vim-json'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-rooter'
+Plug 'voithos/vim-python-matchit'
+Plug 'rodjek/vim-puppet'
 
 call plug#end()
