@@ -18,5 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-rooter'
 Plug 'voithos/vim-python-matchit'
 Plug 'rodjek/vim-puppet'
+Plug 'tpope/vim-commentary'
+Plug 'rking/ag.vim'
 
 call plug#end()
