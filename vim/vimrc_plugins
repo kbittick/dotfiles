@@ -20,5 +20,7 @@ Plug 'voithos/vim-python-matchit'
 Plug 'rodjek/vim-puppet'
 Plug 'tpope/vim-commentary'
 Plug 'rking/ag.vim'
+Plug 'sjbach/lusty'
+Plug 'benjifisher/matchit.zip'
 
 call plug#end()
