@@ -2,6 +2,11 @@ nmap j gj
 nmap k gk
 map <F2> :!i3lock <Enter>
 map <F5> :CtrlPClearCache <Enter>
-map <F6> :Hexmode <Enter>
-map <F7> :SyntasticCheck <Enter>
+"map <F6> :Hexmode <Enter>
+"map <F7> :SyntasticCheck <Enter>
 
+:let mapleader = ","
+map <leader>h :Hexmode <Enter>
+map <leader>s :SyntasticCheck <Enter>
+map <leader>c :noh <Enter>
+map <leader>j <leader>lj
