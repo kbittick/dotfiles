@@ -3,10 +3,12 @@ let g:pymode_lint = 0
 let g:pymode_options_max_line_length = 120
 let g:pymode_rope = 0
 
-let g:syntastic_quiet_messages = {"level": "warnings"}
 let g:syntastic_mode_map = {"mode": "passive"}
 let g:syntastic_cpp_compiler_options = '-std=c++14'
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ["python", "pylama"]
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_working_path_mode = ''
+let g:ctrlp_working_path_mode = 'ra'
+"let g:ctrlp_customer_ignore = {'python_build_dir' : '.*/build./*'}
 
