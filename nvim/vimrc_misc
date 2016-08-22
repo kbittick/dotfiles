@@ -1,0 +1,37 @@
+syntax on
+syntax enable
+set nocompatible
+
+filetype indent plugin on
+set shiftwidth=4
+set expandtab
+set hidden
+set showcmd
+set ignorecase
+set smartcase
+set nostartofline
+set mouse=a
+set number
+set ts=4
+set backspace=indent,eol,start
+set incsearch
+set completeopt=menu
+set laststatus=2
+set splitbelow
+set splitright
+set t_Co=256
+set scrolloff=5
+set sidescrolloff=5
+set colorcolumn=80
+set hlsearch
+set foldmethod=syntax
+set noswapfile
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+set wildignore+=*.pyc

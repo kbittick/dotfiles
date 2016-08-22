@@ -1,0 +1,14 @@
+let g:pymode_enable = 0
+" let g:pymode_doc = 0
+" let g:pymode_lint = 0
+" let g:pymode_rope = 0
+
+let g:neomake_javascript_enabled_makers = ["standard"]
+let g:neomake_python_enabled_markers = ["pylama"]
+let g:neomake_html_enabled_markers = ["tidy"]
+let g:neomake_yaml_enabled_markers = ["yamllint"]
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_working_path_mode = 'ra'
+"let g:ctrlp_customer_ignore = {'python_build_dir' : '.*/build./*'}
+

@@ -1,0 +1,13 @@
+nmap j gj
+nmap k gk
+map <F2> :!i3lock <Enter>
+map <F5> :CtrlPClearCache <Enter>
+
+:let mapleader = "\<space>"
+map <leader>h :Hexmode <Enter>
+map <leader>s :Neomake <Enter>
+map <leader>c :noh <Enter>
+map <leader>j <leader>lj
+map <leader>tt <c-]>
+map <leader>tv :vs <CR>:exec("tag ".expand("<cword>"))<CR>
+map <leader>g !ctags -R .
